@@ -1,0 +1,219 @@
+.key(
+
+	cafe-transition-center-on,
+
+	{
+		0%
+		{
+			.opacity-hide;
+			.z( @z-endure );
+		}
+
+		1%
+		{
+			.opacity-hide;
+			.z( @z-dialog );
+		}
+
+		100%
+		{
+			.opacity-show;
+			.z( @z-dialog );
+		}
+	}
+);
+
+.key(
+
+	cafe-transition-center-off,
+
+	{
+		0%
+		{
+			.opacity-show;
+			.z( @z-dialog );
+		}
+
+		99%
+		{
+			.opacity-hide;
+			.z( @z-dialog );
+		}
+
+		100%
+		{
+			.opacity-hide;
+			.z( @z-endure );
+		}
+	}
+);
+
+.key(
+
+	cafe-transition-top-on,
+
+	{
+		0%
+		{
+			.translate-y( -100% );
+		}
+
+		100%
+		{
+			.translate-y;
+		}
+	}
+);
+
+.key(
+
+	cafe-transition-top-off,
+
+	{
+		0%
+		{
+			.translate-y;
+		}
+
+		100%
+		{
+			.translate-y( -100% );
+		}
+	}
+);
+
+.key(
+
+	cafe-transition-bottom-on,
+
+	{
+		0%
+		{
+			.translate-y( 100% );
+		}
+
+		100%
+		{
+			.translate-y;
+		}
+	}
+);
+
+.key(
+
+	cafe-transition-bottom-off,
+
+	{
+		0%
+		{
+			.translate-y;
+		}
+
+		100%
+		{
+			.translate-y( 100% );
+		}
+	}
+);
+
+.key(
+
+	cafe-transition-left-on,
+
+	{
+		0%
+		{
+			.translate-x( -100% );
+		}
+
+		100%
+		{
+			.translate-x;
+		}
+	}
+);
+
+.key(
+
+	cafe-transition-left-off,
+
+	{
+		0%
+		{
+			.translate-x;
+		}
+
+		100%
+		{
+			.translate-x( -100% );
+		}
+	}
+);
+
+.key(
+
+	cafe-transition-right-on,
+
+	{
+		0%
+		{
+			.translate-x( 100% );
+		}
+
+		100%
+		{
+			.translate-x;
+		}
+	}
+);
+
+.key(
+
+	cafe-transition-right-off,
+
+	{
+		0%
+		{
+			.translate-x;
+		}
+
+		100%
+		{
+			.translate-x( 100% );
+		}
+	}
+);
+
+.key(
+
+	cafe-animation-fadein,
+
+	{
+		0%
+		{
+			.opacity-hide;
+		}
+
+		100%
+		{
+			.opacity-show;
+		}
+	}
+);
+
+.key(
+
+	cafe-animation-fadeout,
+
+	{
+		0%
+		{
+			.opacity-show;
+		}
+
+		100%
+		{
+			.opacity-hide;
+		}
+	}
+);

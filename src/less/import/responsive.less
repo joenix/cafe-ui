@@ -1,0 +1,34 @@
+@import '../responsive/index';
+
+@import '../preset/responsive';
+
+
+// Mobile: 1 - 576
+.responsive ( @responsive-grain, @responsive-scape, cafe-mobile, {
+	.responsive-mobile;
+});
+
+// Pad: 577 - 1024
+.responsive ( @responsive-scape + @responsive-grain, @responsive-client, cafe-pad, {
+	.responsive-pad;
+});
+
+// Desktop: 1025 - 1280
+.responsive ( @responsive-client + @responsive-grain, @responsive-screen, cafe-desktop, {
+	.responsive-desktop;
+});
+
+// Wide: 1281 - 1600
+.responsive ( @responsive-screen + @responsive-grain, @responsive-wide, cafe-wide, {
+	.responsive-wide;
+});
+
+// Generous: 1601 - 1920
+.responsive ( @responsive-wide + @responsive-grain, @screen-infinite, cafe-generous, {
+	.responsive-generous;
+});
+
+// Infinite: 1921 - Infinite
+.responsive ( @responsive-infinite + @responsive-grain, @responsive-infinite * 100, cafe-infinite, {
+	.responsive-infinite;
+});

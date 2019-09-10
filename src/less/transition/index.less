@@ -1,0 +1,34 @@
+/* !!
+ * enter
+ * leave
+ * appear
+ * ----- ----- -----
+ * enter-to
+ * leave-to
+ * appear-to
+ * ----- ----- -----
+ * enter-active
+ * leave-active
+ * appear-active
+ * ===== ===== =====
+ */
+
+[class*=effect-fade],
+[class*=effect-left],
+[class*=effect-right],
+[class*=effect-top],
+[class*=effect-bottom]
+{
+	.effect( all, @speed );
+}
+
+
+@import './fade';
+
+@import './left';
+
+@import './right';
+
+@import './top';
+
+@import './bottom';

@@ -1,0 +1,144 @@
+/* !!
+ * Color
+ * ----- ----- -----
+ * Basic Support: Less Extend Colour
+ * ===== ===== =====
+ */
+
+
+
+/* === Basic Support === */
+
+
+
+/* !!
+ * Alpha
+ * === === ===
+ */
+
+// 微小
+@alpha-micro: 5;
+// 迷你
+@alpha-mini: 10;
+// 虚弱
+@alpha-week: 30;
+// 半命
+@alpha-half: 50;
+// 富余
+@alpha-surp: 60;
+// 充盈
+@alpha-plenty: 75;
+// 土豪
+@alpha-tycoon: 90;
+
+
+
+/* !!
+ * Colour
+ * === === ===
+ */
+
+// 纯色
+@pure: #ffffff;
+// 荧色
+@fluorescein: #f6f6fc;
+// 尘色
+@dust: #f0f1f4;
+
+// 黑色
+@dark: #333333;
+// 暗色
+@dim: #999999;
+// 灰色
+@gray: #cccccc;
+
+// 烟色
+@smoke: #d8dfe3;
+
+// 紫色
+@violet: #7662fe;
+// 沥色
+@asphalt: #94b7ca;
+// 沉色
+@deepest: #262e48;
+// 赤色
+@crimson: #ed6347;
+// 草色
+@grass: #82cb2c;
+// 橙色
+@orange: #f7ba2a;
+
+
+
+/* !!
+ * Semantization
+ * === === ===
+ */
+
+// 成功
+@success: @grass;
+// 警告
+@warning: @orange;
+// 错误
+@error: @crimson;
+
+
+// 文本 - 禁止
+@text-disabled: @gray;
+// 文本 - 提示
+@text-tip: @asphalt;
+// 文本 - 标题
+@text-title: @dim;
+
+// 文本 - 文案
+@text-font: @dark;
+// 文本 - 错误
+@text-error: @crimson;
+
+
+
+/* === Configure === */
+
+
+@stagnant: fade( @pure, @alpha-half );
+@torrential: fade( @pure, 100 );
+
+
+// Support - Theme
+@theme: @violet;
+@theme-aux: fade( @violet, @alpha-week );
+@theme-lit: fade( @violet, @alpha-half );
+@theme-fill: fade( @violet, @alpha-plenty );
+
+// Support - Ignore
+@ignore: @asphalt;
+@ignore-aux: fade( @asphalt, @alpha-week );
+@ignore-lit: fade( @asphalt, @alpha-half );
+@ignore-fill: fade( @asphalt, @alpha-plenty );
+
+// Support - Grizzle
+@grizzle: @smoke;
+@grizzle-aux: fade( @smoke, @alpha-week );
+@grizzle-lit: fade( @smoke, @alpha-half );
+@grizzle-fill: fade( @smoke, @alpha-plenty );
+
+
+// Input
+@input-default: @theme;
+@input-hover: @ignore;
+@input-focus: @grizzle;
+
+
+// Button - Theme
+@button-theme-default: @theme;
+@button-theme-active: @theme;
+@button-theme-focue: @theme;
+@button-theme-hover: @theme-aux;
+@button-theme-disabled: @theme-lit;
+
+// Button - Ignore
+@button-ignore-default: @ignore;
+@button-ignore-active: @ignore;
+@button-ignore-focue: @ignore;
+@button-ignore-hover: @ignore-aux;
+@button-ignore-disabled: @ignore-lit;

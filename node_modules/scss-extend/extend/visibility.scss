@@ -1,0 +1,12 @@
+/* !!
+ * Visibility
+ * ===== ===== =====
+ */
+
+@each $one in ( visible, hidden, collapse )
+{
+	.#{$one}
+	{
+		@include visibility( $one );
+	}
+}

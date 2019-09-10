@@ -1,0 +1,40 @@
+.cafe-form
+{
+	& > .cafe-form-item
+	{
+		.margin-bottom( @space );
+
+		&:first-child
+		{
+			.margin-top( @space );
+		}
+	}
+
+	&.cafe-form-left
+	{
+		.cafe-label
+		{
+			.text-left;
+		}
+	}
+
+	&.cafe-form-right
+	{
+		.cafe-label
+		{
+			.text-right;
+		}
+	}
+}
+
+.cafe-form-item
+{
+	& > .cafe-label
+	{
+		.inline-block;
+
+		.width-min( 1rem );
+
+		.padding-horizontal( @unit );
+	}
+}

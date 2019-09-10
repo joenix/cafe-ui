@@ -1,0 +1,16 @@
+/* !!
+ * Display
+ * ===== ===== =====
+ */
+
+@each $one in ( none, block, inline, inline-block, flex, inline-flex )
+{
+	.#{$one}
+	{
+		@include display( $one );
+	}
+}
+.show
+{
+	@include display( block );
+}

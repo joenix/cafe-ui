@@ -1,0 +1,30 @@
+@mixin gradient ( $gradient )
+{
+	background-image: -webkit-#{$gradient};
+	background-image: -moz-#{$gradient};
+	background-image: -ms-#{$gradient};
+	background-image: -o-#{$gradient};
+	background-image: #{$gradient};
+}
+
+
+@mixin gradient-linear ( $start: $color-pure, $end: $color-pure, $dir: top )
+{
+	@include gradient( linear-gradient( $dir, $start, $end ) );
+}
+
+@mixin gradient-linear-repeat ( $start: $color-pure, $end: $color-pure, $dir: top )
+{
+	@include gradient( repeating-linear-gradient( $dir, $start, $end ) );
+}
+
+
+@mixin gradient-radial ( $start: $color-pure, $end: $color-pure, $shape: circle )
+{
+	@include gradient( radial-gradient( $shape, $start, $end ) );
+}
+
+@mixin gradient-radial-repeat ( $start: $color-pure, $end: $color-pure, $shape: circle )
+{
+	@include gradient( repeating-radial-gradient( $shape, $start, $end ) );
+}

@@ -1,0 +1,4 @@
+@mixin display ( $mode )
+{
+	@include css( display, $mode );
+}

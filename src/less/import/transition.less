@@ -1,0 +1,80 @@
+@import '../transition/index';
+
+/* Origin Version */
+.cafe-transition
+{
+	// .effect( transform, @speed, linear, @flash );
+}
+
+.cafe-transition-center
+{
+	&.cafe-transition-on
+	{
+		.animation( cafe-transition-center-on, @speed );
+	}
+
+	&.cafe-transition-off
+	{
+		.animation( cafe-transition-center-off, @speed );
+	}
+}
+
+.cafe-transition-top
+{
+	&.cafe-transition-on
+	{
+		.animation( cafe-transition-top-on, @speed );
+	}
+	&.cafe-transition-off
+	{
+		.animation( cafe-transition-top-off, @speed );
+	}
+}
+
+.cafe-transition-bottom
+{
+	&.cafe-transition-on
+	{
+		.animation( cafe-transition-bottom-on, @speed );
+	}
+	&.cafe-transition-off
+	{
+		.animation( cafe-transition-bottom-off, @speed );
+	}
+}
+
+.cafe-transition-left
+{
+	&.cafe-transition-on
+	{
+		.animation( cafe-transition-left-on, @speed );
+	}
+	&.cafe-transition-off
+	{
+		.animation( cafe-transition-left-off, @speed );
+	}
+}
+
+.cafe-transition-right
+{
+	&.cafe-transition-on
+	{
+		.animation( cafe-transition-right-on, @speed );
+	}
+	&.cafe-transition-off
+	{
+		.animation( cafe-transition-right-off, @speed );
+	}
+}
+
+.cafe-transition-fade
+{
+	&.cafe-transition-on
+	{
+		.animation( cafe-animation-fadein, @speed );
+	}
+	&.cafe-transition-off
+	{
+		.animation( cafe-animation-fadeout, @speed );
+	}
+}
